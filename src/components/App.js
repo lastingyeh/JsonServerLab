@@ -321,8 +321,8 @@ class App extends Component {
               <h3 className="panel-title">TodoApp</h3>
             </div>
             <div className="panel-body">
-              <TodoAddForm placeholderText="項目文字寫在這，按Enter鍵可以加入列表中" onItemAdd={this.handleItemAdd} />
-              <TodoSearchForm placeholderText="搜尋" onItemSearch={this.handleItemSearch} />
+              <TodoAddForm placeholderText="Edit your planning" onItemAdd={this.handleItemAdd} />
+              <TodoSearchForm placeholderText="Search" onItemSearch={this.handleItemSearch} />
               <TodoList onItemFilter={this.handleItemFilter} onItemSort={this.handleItemSort}
                         sortType={this.state.sortType}>
                 {

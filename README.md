@@ -1,24 +1,22 @@
-## As a prerequisite for prepare
-
 #### 1.json-server setup
 
-#### install
+    (1)install
 
-    npm install -g json-server
+        npm install -g json-server
     
-#### create json_server/db.json
+    (2)create json_server/db.json
 
-    fill data what you need
+        fill data what you need
     
-#### start
+    (3)start
 
-    json-server --watch --port 5555 json_server_db/db.json
+        json-server --watch --port 5555 json_server_db/db.json
     
-#### check as if json-server exists
+    (4)check as if json-server exists
 
-    http://localhost:5555/items
+        http://localhost:5555/items
     
-### 2.project setup
+### 2.project setup && run
 
     (1) npm install
     
@@ -33,7 +31,7 @@
     
         npm start
         
-### 3. project introduce
+### 3. project introduced
 
     (1) flow types defined for react
     

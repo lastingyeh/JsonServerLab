@@ -11,18 +11,19 @@ const TodoList = ({ children, onItemFilter, onItemSort, sortType }:TodoListProps
 
   // Render TodoList
   return (
-    <div>
+    <div style={{marginTop:20}}>
+      <button className={(sortTypeIndex === 0)?'btn btn-default':'btn btn-success'}
+              onClick={()=>{onItemSort((sortType==='asc')?'desc':'asc')}}
+              disabled={(React.Children.count(children))?false:true}>
+        Sort By strokes：{['', 'ASC', 'DESC'][sortTypeIndex]}
+      </button>
+      {'  '}
       <label>
         <input type="checkbox"
                defaultChecked
                onClick={onItemFilter} />
         Completed Included
       </label>
-      <button className={(sortTypeIndex === 0)?'btn btn-default':'btn btn-success'}
-              onClick={()=>{onItemSort((sortType==='asc')?'desc':'asc')}}
-              disabled={(React.Children.count(children))?false:true}>
-        SortBy strokes：{['null', 'ASC', 'DESC'][sortTypeIndex]}
-      </button>
       <ul className="list-group">
         {children}
       </ul>
