@@ -51,7 +51,7 @@
     
 ### 5. demo
 
-    ![alt tag](https://github.com/lastingyeh/JsonServerLab/blob/master/demo.gif)
+![alt tag](https://github.com/lastingyeh/JsonServerLab/blob/master/demo.gif)
             
     
     
