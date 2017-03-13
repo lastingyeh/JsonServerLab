@@ -7,7 +7,7 @@ import TodoEditForm from './TodoEditForm'
 import TodoSearchForm from './TodoSearchForm'
 
 //static flow type
-import type { Item, SortType } from '../definitions/TodoTypeDefinition.js'
+import type { Item, SortType } from '../defTypes/TodoTypeDefs'
 
 //import css
 import '../style/bootstrap.css'
